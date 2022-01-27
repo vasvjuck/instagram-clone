@@ -1,0 +1,94 @@
+.profile{
+    .profile__header{
+        display: flex;
+        width: 320px;
+        justify-content: center;
+        .follow{
+            width: 75px;
+            text-align: center;
+            margin-top: 20px;
+            margin-right: 18px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            b{
+              
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #C9CAD1;
+            }
+            &:last-child{
+                margin-right: 0;
+                margin-left: 18px;
+            }
+        }
+    }
+    .textContainer{
+       padding-top: 25px;
+       text-align: center;
+        .accountName{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #010101;
+        }
+        .caption{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            
+            text-align: center;
+            
+            color: #808080;
+        }
+    }
+
+    .edit__btn{
+        display: flex;
+        justify-content: space-between;
+        max-width: 240px;
+        padding-left: 40px;
+        align-items: center;
+        padding-top: 20px;
+        .btn__cancel{
+            padding: 10px 15px;
+            border: 1px solid #C9CAD1;
+            box-sizing: border-box;
+            border-radius: 12px;
+            cursor: pointer;
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #010101;
+            }
+        }
+        .btn__save{
+            padding: 10px 15px;
+            background-color: #0087FF;
+            cursor: pointer;
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .profile__footer{
+        padding-top: 42px;
+        width: 300px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #808080;
+        opacity: 0.2;
+        text-align: center;
+    }
+}

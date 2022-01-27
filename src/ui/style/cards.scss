@@ -1,0 +1,16 @@
+.cards{
+    width: 560px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cards{
+        width: 100%;
+        padding: 0 17px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .cards{
+        width: 100%;
+        padding: 0 17px;
+    } 
+}

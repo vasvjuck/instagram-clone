@@ -1,0 +1,108 @@
+.profilePage__container{
+    padding-top: 130px;
+    max-width: 900px;
+    margin: 0 auto;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__icon{
+            display: flex;
+            justify-content: space-between;
+            max-width: 450px;
+            .img{
+                margin-right: 32px;
+            }
+            .userName{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 20px;
+                color: #010101;
+                margin-bottom: 10px;
+            }
+            .job{
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+            .caption{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                color: #808080;
+            }
+        }
+        .header__info{
+            .follow{
+                display: flex;
+                max-width: 210px;
+                justify-content: space-between;
+               padding-left: 60px;
+              .followers{
+                    max-width: 70px;
+                    margin-right: 80px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: right;
+                    color: #C9CAD1;
+                  &:last-child{
+                      margin-right: 0;
+                  }
+                  b{
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: #010101;
+                  }
+              }
+            }
+            .edit__btn{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 40px;
+                .btn__cancel{
+                    padding: 10px 27px;
+                    border: 1px solid #C9CAD1;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    a{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #010101;
+                    }
+                }
+                .btn__save{
+                    padding: 10px 27px;
+                    background-color: #0087FF;
+                    cursor: pointer;
+                    margin-left: 19px;
+                    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+                    border-radius: 12px;
+                    a{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    .photo{
+        .block__img{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media only screen and (max-width: 380px){
+
+}

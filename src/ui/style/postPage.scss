@@ -1,0 +1,169 @@
+.postInfo{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .postInfo__content{
+        display: flex;
+        justify-content: space-between;
+        
+        border-radius: 32px;
+        background-color: white;
+        width:739px;
+        height: 420px;
+        .cardImage{
+            border-top-left-radius: 32px;
+            border-bottom-left-radius: 32px;
+        }
+        .postInfo__text{
+            padding-left: 20px;
+            .postInfo__header{
+                display: flex;
+                justify-content:space-between ;
+                padding-top: 20px;
+                padding-right: 150px;
+                padding-bottom: 16px;
+                border-bottom: 0.5px solid #C9CAD1;
+                .username{
+                    margin-top: 5px;
+                    margin-left: 20px;
+                    color: #010101;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                .close {
+                    position: absolute;
+                    border: 0;
+                    background-color: #fff;
+                    right: 400px;
+                    top: 210px;
+                    width: 12px;
+                    height: 12px;
+                    opacity: 0.3;
+                    }
+                    .close:hover {
+                    opacity: 1;
+                    }
+                    .close:before, .close:after {
+                    position: absolute;
+                    left: 15px;
+                    content: ' ';
+                    height: 20px;
+                    width: 2px;
+                    background-color: #333;
+                    }
+                    .close:before {
+                    transform: rotate(45deg);
+                    }
+                    .close:after {
+                    transform: rotate(-45deg);
+                    }
+            }
+            .postInfo__main__container{
+                padding-bottom: 30px;
+            }
+            .postInfo__main{
+                display: flex;
+                justify-content:start ;
+                
+                padding-top: 20px;
+                width: 300px;
+                
+                padding-bottom: 10px;
+                
+                .comment{
+                    margin-left: 20px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #010101;
+                }
+                .time{
+                    font-size: 10px;
+                    line-height: 20px;
+                    color: #C9CAD1;
+                    margin-left: 20px;
+                }
+                p{
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            .like__btn{
+                border-top: 0.5px solid #C9CAD1;
+                border-bottom: 0.5px solid #C9CAD1;
+                padding: 15px 0;
+                .likes{
+                    color: #C9CAD1;
+                }
+                .likes__btn{
+                    color: #000000;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    .like{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .postInfo__form{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 15px;
+                .input{
+                    outline: none;
+                    border: none;
+                }
+                .input__btn{
+                    border: 0;
+                    background-color: #fff;
+                    color: #0087FF;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;  
+                    cursor: pointer;
+                    margin-right: 30px;
+                }
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width: 380px){
+    .postInfo{
+        height: 100vh;
+        width: 100vw;
+        background: #fff;
+        .postInfo__content{
+            height: 100vh;
+            width: 100vw;
+            display: block;
+        }
+        .cardImage{
+            width: 340px;
+            height: 280px;
+            padding-left: 16px;
+            padding-top: 80px;
+            border-radius: 24px;
+            object-fit: cover;
+        }
+        .postInfo__text{
+            position: relative;
+            .postInfo__header{
+                position: absolute;
+                top: -370px;
+                left: 20px;
+                z-index: 5;
+            }
+            .postInfo__main{
+                padding-bottom: 3px;
+            }
+        }
+    }
+}

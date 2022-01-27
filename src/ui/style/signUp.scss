@@ -1,0 +1,170 @@
+h3{
+    font-weight: 800;
+    font-size: 15.6735px;
+    line-height: 24px;
+    color: #010101;
+    font-style: italic;
+
+}
+
+.form{
+    padding-top: 90px;
+    .form__text{
+        font-size: 48px;
+        line-height: 72px;
+        color: #010101;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    .editInfo__input{
+        margin-bottom: 20px;
+        .inpt__text{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            color: #808080;
+        }
+        .input{
+            width: 360px;
+            height: 40px;
+            background: #FFFFFF;
+            border: 1px solid #C9CAD1;
+            box-sizing: border-box;
+            border-radius: 12px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .signUp__text{
+        display: flex;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        .a{
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #808080;
+        }
+        .b{
+            margin-left: 10px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #0087FF;
+        }
+    }
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome__img{
+    
+    margin-right: 700px;
+    .welcome1{
+        position: fixed;
+        top:70px;
+        left: 250px;
+        width: 400.25px;
+        height: 657.24px;
+        z-index: 25;
+    }
+    .welcome2{
+        position: fixed;
+        top: 350px;
+        left: 190px;
+        width: 170px;
+        height: 170px;
+        filter: drop-shadow(3.61602px 3.61602px 7.23204px rgba(0, 0, 0, 0.25));
+        border-radius: 16px;
+        z-index: 50;
+    }
+    .welcome3{
+        position: fixed;
+        top: 580px;
+        left: 500px;
+        width: 150px;
+        height: 150px;
+        z-index: 60;
+    }
+    .welcome4{
+        position: fixed;
+        top: 250px;
+        left: 565px;
+        width: 100px;
+        height: 100px;
+        z-index: 20;
+    }
+}
+.signUp__btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        
+        .btn__signUp{
+            padding: 14px 150px;
+            background-color: #0087FF;
+            box-sizing: border-box;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #ffffff;
+            border: none;
+            &:disabled{
+             background-color: #808080;;   
+            }
+        }
+        .btn__login{
+            padding: 14px 158px;
+            background-color: #0087FF;
+            box-sizing: border-box;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #ffffff;
+            border: none;
+            &:disabled{
+             background-color: #808080;;   
+            }
+        }
+}
+@media only screen and (max-width: 380px){
+    .welcome__img{
+        display: none;
+    }
+    .form{
+        padding-top: 30px;
+        
+        .form__text{
+            font-size: 32px;
+            line-height: 48px;
+        }
+        .input{
+            width: 320px;
+            height: 40px;
+         
+        }
+        .sign__up__phone{
+          
+        }
+        .signUp__btn{
+            position: fixed;
+            bottom:70px;
+        }
+        .signUp__text{
+            position: fixed;
+            bottom: 120px;
+        }
+    }
+}

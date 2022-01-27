@@ -1,0 +1,112 @@
+input[type="text"]{
+    color: #010101;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 14px;
+}
+
+.newPost{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .newPost__content{
+        padding: 40px;
+        border-radius: 32px;
+        background-color: white;
+        width: 476px;
+        height: 572px;
+    }
+    .newPost__image{
+        width: 480px;
+        height: 345px;
+        background: #C9CAD1;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .img{
+            align-items: center;
+            margin-left: 80px;
+        }
+        .choosephoto{
+            margin-top: 20px;
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+        }
+    }
+    .description__input{
+        padding-top: 30px;
+        .inpt__text{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            color: #808080;
+        }
+        .input{
+            width: 480px;
+            height: 108px;
+            background: #FFFFFF;
+            border: 1px solid #C9CAD1;
+            box-sizing: border-box;
+            border-radius: 12px;
+        }
+    }
+    .edit__btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        .btn__cancel{
+            padding: 14px 85px;
+            border: 1px solid #C9CAD1;
+            box-sizing: border-box;
+            border-radius: 12px;
+            cursor: pointer;
+            .c{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #010101;
+                background-color: #fff;
+                border: 0;
+                cursor: pointer;
+            }
+        }
+        .btn__save{
+            padding: 14px 85px;
+            background-color: #0087FF;
+            cursor: pointer;
+            margin-left: 12px;
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            .b{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #FFFFFF;
+                background-color: #0087FF;
+                border: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px){
+
+}

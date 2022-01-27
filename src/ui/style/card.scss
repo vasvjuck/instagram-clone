@@ -1,0 +1,95 @@
+.card{
+    width: 560px;
+    background-color: #ffffff;
+    margin-bottom: 3.5em;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.3em;
+        .profileCard{
+            margin-bottom: 0;
+        }
+        .img__dots{
+            height: 32px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .cardImage{
+        width: 100%;
+        display: block;
+        border-radius: 48px;
+        margin-bottom: 20px;
+    }
+    .suptitle{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #808080;
+    }
+    .cardFooter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        .likeComments{
+            display: flex;
+            width: 120px;
+            justify-content: space-between;
+            .likes{
+                margin-top: 3px;
+                color: #C9CAD1;
+                font-size: 18px;
+                .red{
+                    color: red;
+                }
+            }
+            .comments{
+                margin-top: 6px;
+                color: #C9CAD1;
+                font-size: 18px;
+            }
+            .likes__btn{
+                cursor: pointer;
+                border: 0;
+                background-color: #fff;
+                color: #000000;
+            }
+            .like{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+            button{
+                background-color: #fff;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+            }
+        }
+        .share{
+            display: flex;
+            justify-content: center;
+            color: #000000;
+            .arrow__img{
+                margin-top: 3px;
+            }
+            .arrow{
+                margin-left: 11px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .card{
+        margin-bottom: 0.75em;
+    }
+}
